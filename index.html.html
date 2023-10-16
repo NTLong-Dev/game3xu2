@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Document</title>
+    <style>
+        .button{
+        display: flex;
+        justify-content: center;
+        padding: 40vh;
+        }
+
+    img{
+
+        width: 100px;
+        height: 100px;
+    }
+    h1{
+        text-align: center;
+       color: red;
+       font-family:'Courier New', Courier, monospace;
+    }
+        </style>
+        </head>
+         <h1>Hãy Nhấn Vào Đồng Xu</h1> 
+         <audio src="Nhac-nen-Paris-else-TikTok.mp3" autoplay loop></audio>  
+        <body>
+        <div class = "button">
+                <img id="no" src="https://png.pngtree.com/png-clipart/20220213/original/pngtree-bitcoin-btc-icon-vector-coin-png-image_7267889.png   " alt="">
+            </div>  
+            <script>
+            var a = document.getElementById("no");
+            a.addEventListener('click', (event) => {
+            window.innerWidth = -500;
+            window.innerWidth = 500;
+            window.innerHeight = -300;
+            window.innerHeight = 200;
+            var randomX = Math.floor(Math.random() * window.innerWidth); 
+            var randomY = Math.floor(Math.random() * window.innerHeight); 
+            a.style.transform = `translate(${randomX}px, ${randomY}px)`;
+            });
+            document.addEventListener('DOMContentLoaded', () => {
+  const audio = document.querySelector('audio');
+  document.addEventListener('click', () => {
+    audio.play();
+  });
+});
+            </script>
+</body>
+</html>
